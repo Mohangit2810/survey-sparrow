@@ -18,13 +18,7 @@ The Survey Sparrow Survey Analyzer is a powerful tool designed to streamline the
 
 **Getting Started:**
 
-1. **Installation:** Install the Survey Sparrow Survey Analyzer CLI using the following command:
-
-   ```bash
-   npm install -g @surveysparrow/survey-analyzer-cli
-   ```
-
-2. **Documentation:** For detailed documentation and usage instructions, refer to the [Survey Sparrow Survey Analyzer CLI documentation](https://sdk.surveysparrow.dev/).
+1. **Documentation:** For detailed documentation and usage instructions, refer to the [Survey Sparrow Survey Analyzer CLI documentation](https://sdk.surveysparrow.dev/).
 
 **API Reference:**
 
