@@ -19,6 +19,7 @@ The Survey Sparrow Survey Analyzer is a powerful tool designed to streamline the
 **Getting Started:**
 
 1. **Documentation:** For detailed documentation and usage instructions, refer to the [Survey Sparrow Survey Analyzer CLI documentation](https://sdk.surveysparrow.dev/).
+2. **Open AI API:** Please make sure you update your api key in the constants.js in the src/constants folder. You can find your Open AI key in Open AI website -> API -> secret keys , also you need to have a paid account to access the api tokens.
 
 **API Reference:**
 
