@@ -55,7 +55,7 @@ const Main = ({ client }) => {
         const questionsArray =
           aioverview?.choices[0]?.message?.content.split("\n");
 
-        // console.log(questionsArray);
+        console.log(questionsArray);
         setSurveyOverview(questionsArray);
         document.getElementById("survey-overview").scrollIntoView();
       } else {
@@ -67,13 +67,6 @@ const Main = ({ client }) => {
   }
 
   async function getSurveys() {
-    // const response = await getAllSurveys(
-    //   "surveys",
-    //   client,
-    //   "proRWJG3C-_AQIxhPwJtt6A1qv1i5ukl5yBg-CTkRmR5wmVaQAKT7sTVrfs_2InVSCzTd5v6va5sUnua8Rn2D3wg"
-    // );
-    // const allSurveys = JSON.parse(response);
-    // const allSurveyData = allSurveys.body.data
     const allSurveyData = [
       {
         id: 1000064374,
@@ -150,7 +143,7 @@ const Main = ({ client }) => {
           Please enter your SurveySparrow API key. You can find it in Settings
           -&gt; Apps & Integrations -&gt; Custom Apps.
         </Text>
-        <Flex
+        {/* <Flex
           css={{ alignSelf: "flex-start", marginTop: "60px" }}
           flexDirection="column"
           gap={"12px"}
@@ -173,7 +166,7 @@ const Main = ({ client }) => {
             placeholder="Enter your API Key"
             css={{ marginRight: "$2", width: "800px" }}
           />
-        </Flex>
+        </Flex> */}
 
         <Button
           size="xl"

@@ -3,7 +3,7 @@ export const getAllSurveys = async (name, client, apiKey) => {
   return await client.request.get(`${url}/v3/surveys`, {
     options: {
       headers: {
-        Authorization: `Bearer ${apiKey}`,
+        Authorization: `Bearer <%=iparams.surveysparrow_api_key%>`,
       },
     },
   });
