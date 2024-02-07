@@ -138,41 +138,19 @@ const Main = ({ client }) => {
             marginLeft: "auto",
           }}
         >
-          Enter your API Key and Survey ID to get an AI overview of your survey.
+          Select your survey and get an AI overview of your survey responses.
           <br />
-          Please enter your SurveySparrow API key. You can find it in Settings
-          -&gt; Apps & Integrations -&gt; Custom Apps.
+          And get insights on the positive and negative feedback from your
+          surveys.
         </Text>
-        {/* <Flex
-          css={{ alignSelf: "flex-start", marginTop: "60px" }}
-          flexDirection="column"
-          gap={"12px"}
-        >
-          <FormLabel
-            size={"lg"}
-            htmlFor="api-key"
-            css={{ marginRight: "$2", fontWeight: "bold" }}
-          >
-            API Key
-          </FormLabel>
-          <FormInput
-            id="api-key"
-            type="text"
-            value={apiKey}
-            // value={
-            //   "proRWJG3C-_AQIxhPwJtt6A1qv1i5ukl5yBg-CTkRmR5wmVaQAKT7sTVrfs_2InVSCzTd5v6va5sUnua8Rn2D3wg"
-            // }
-            onChange={(e) => setApiKey(e.target.value)}
-            placeholder="Enter your API Key"
-            css={{ marginRight: "$2", width: "800px" }}
-          />
-        </Flex> */}
 
         <Button
           size="xl"
           color="primary"
           css={{
-            marginTop: "$10",
+            marginTop: "$30",
+            marginRight: "auto",
+            marginLeft: "auto",
           }}
           onClick={getSurveys}
         >
@@ -220,6 +198,19 @@ const Main = ({ client }) => {
         >
           Get Survey Overview
         </Button>
+        <Text
+          size="md"
+          css={{
+            marginBottom: "$6",
+            marginTop: "$6",
+
+            maxWidth: 850,
+            textAlign: "left",
+            color: "$neutral800",
+          }}
+        >
+          Please wait for 15-20 seconds to get the AI overview of your survey.
+        </Text>
       </Box>
       <SurveyOverview questionsArray={surveyOverview} />
     </Flex>

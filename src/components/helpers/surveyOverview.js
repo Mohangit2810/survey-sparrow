@@ -18,18 +18,18 @@ function SurveyOverview({ questionsArray }) {
 
   // Remove "{" and "}" characters from the beginning and end of the string
   const sanitizedString = joinedString.replace(/^{+|}+$/g, "");
-  console.log("sanitized", sanitizedString);
+  // console.log("sanitized", sanitizedString);
 
   // // Split the sanitized string into an array of lines
   const linesArray = sanitizedString.split(",  ");
-  console.log("linesArray", linesArray);
+  // console.log("linesArray", linesArray);
 
   // Create an object to store questions and overviews
   const obj = {};
 
   linesArray.forEach((line) => {
     // Split each line into question and overview
-    const [question, overview] = line.split('": "');
+    const [question, overview] = line.split(': "');
 
     // Remove remaining quotes and comma from the overview
     const sanitizedOverview = overview.replace(/\"+|,+/g, "");
